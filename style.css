@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+body{
+    font-family: 'Gulzar', serif;
+}
+#container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+#container #content {
+    position: relative;
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#container #content #img img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width:300px; 
+    height:450px;
+}
+#container #content #text  {
+    padding: 30px;
+    display: block;
+    line-height: 30px;
+}
+#container #content #text #perfume{
+    color: hsla(228, 12%, 48%, 0.797);
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#container #content #text h1 span {
+    font-weight: bolder;
+    
+}
+#container #content #text p {
+    color:hsla(228, 12%, 48%, 0.797) ;
+    font-size: 16px;
+}
+#container #content #text #money #first{
+    color: hsl(158, 36%, 37%);
+    font-size: 34px;
+    margin-right: 24px;
+}
+#container #content #text #money #second{
+    color:hsla(228, 12%, 48%, 0.797) ;
+    text-decoration: line-through;
+}
+#container #content #text button {
+    background-color: #0E750E;
+    border: none;
+    width: 240px;
+    height: 45px;
+    border-radius: 9px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:500px){
+    #container {
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        background-color: hsl(30, 38%, 92%);
+    }
+    #container #content{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        width: 70%;
+        height: 100%;
+    }
+    #container #content #img img {
+        visibility: hidden;
+        
+    }
+    #container #content #img {
+        background-image: url(/images/image-product-mobile.jpg);
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        position: relative;
+        
+    }
+    #container #content #img img {
+        width: 70%;
+        height: 50%;
+    }
+    #container #content #text button {
+        text-align: center;
+        width: 100%;
+    }
+}
